@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".PercentActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -26,7 +26,7 @@
         android:layout_marginStart="3dp"
         android:backgroundTint="@color/black"
         android:text="0"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
@@ -38,7 +38,7 @@
         android:layout_marginStart="3dp"
         android:backgroundTint="@color/black"
         android:text="."
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/button0"
         app:layout_constraintStart_toEndOf="@id/button0"
         app:layout_constraintTop_toTopOf="@id/button0"
@@ -51,20 +51,20 @@
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
         android:text="C"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/button_point"
         app:layout_constraintStart_toEndOf="@id/button_point"
         app:layout_constraintTop_toTopOf="@id/button_point"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button_minus"
+        android:id="@+id/button_minus_percent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
-        android:text="-"
-        android:textSize="50sp"
+        android:text="-%"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/button_delete"
         app:layout_constraintStart_toEndOf="@id/button_delete"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,13 +73,13 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button_plus"
+        android:id="@+id/button_plus_percent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
-        android:text="+"
-        android:textSize="50sp"
+        android:text="+%"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/button3"
         app:layout_constraintStart_toEndOf="@id/button3"
         app:layout_constraintTop_toTopOf="@id/button3"
@@ -88,13 +88,13 @@
 
 
     <Button
-        android:id="@+id/button_delenie"
+        android:id="@+id/button_divide_percent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
-        android:text="/"
-        android:textSize="50sp"
+        android:text="/%"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/button6"
         app:layout_constraintStart_toEndOf="@id/button_delete"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,13 +102,13 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button_umnojenie"
+        android:id="@+id/button_multiply_percent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
-        android:text="*"
-        android:textSize="50sp"
+        android:text="*%"
+        android:textSize="40sp"
         app:layout_constraintTop_toTopOf="@id/button9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button9"
@@ -122,10 +122,10 @@
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
         android:text="1"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@id/button0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/button_plus"
+        app:layout_constraintTop_toTopOf="@id/button_plus_percent"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -135,7 +135,7 @@
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
         android:text="2"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/button1"
         app:layout_constraintStart_toEndOf="@id/button1"
         app:layout_constraintTop_toTopOf="@id/button1"
@@ -148,7 +148,7 @@
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
         android:text="3"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/button2"
         app:layout_constraintStart_toEndOf="@id/button2"
         app:layout_constraintTop_toTopOf="@id/button2"
@@ -161,10 +161,10 @@
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
         android:text="4"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@id/button1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/button_delenie"
+        app:layout_constraintTop_toTopOf="@id/button_divide_percent"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -174,7 +174,7 @@
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
         android:text="5"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/button4"
         app:layout_constraintStart_toEndOf="@id/button4"
         app:layout_constraintTop_toTopOf="@id/button4"
@@ -187,7 +187,7 @@
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
         android:text="6"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/button5"
         app:layout_constraintTop_toTopOf="@id/button5"
         app:layout_constraintStart_toEndOf="@id/button5"
@@ -200,7 +200,7 @@
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
         android:text="7"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@id/button4"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
@@ -212,7 +212,7 @@
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
         android:text="8"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/button7"
         app:layout_constraintTop_toTopOf="@id/button7"
         app:layout_constraintStart_toEndOf="@id/button7"
@@ -225,7 +225,7 @@
         android:layout_margin="3dp"
         android:backgroundTint="@color/black"
         android:text="9"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@id/button8"
         app:layout_constraintTop_toTopOf="@id/button8"
         app:layout_constraintStart_toEndOf="@id/button8"
@@ -239,17 +239,17 @@
         android:layout_marginRight="3dp"
         android:backgroundTint="@color/black"
         android:text="="
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@id/button9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
     <Button
-        android:id="@+id/button_percent"
+        android:id="@+id/button_back"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="3dp"
-        android:text="%"
+        android:text="@string/backButton"
         android:textSize="30sp"
         android:backgroundTint="@color/black"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -263,9 +263,9 @@
         android:text="s"
         android:textSize="30sp"
         android:backgroundTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="@id/button_percent"
+        app:layout_constraintBottom_toBottomOf="@id/button_back"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/button_percent"
+        app:layout_constraintTop_toTopOf="@id/button_back"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
